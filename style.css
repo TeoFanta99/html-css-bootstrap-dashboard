@@ -12,3 +12,41 @@
     font-family: 'PT Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+
+header {
+    /* debug */
+    background-color: red;
+    min-height: 100px;
+}
+
+header img {
+    width: 13%;
+}
+
+#left-bar {
+    height: calc(100vh - 100px);
+    background-color: #0D253A;
+    width: 80px;
+}
+
+#left-bar i {
+    color: white;
+    width: 25px;
+    height: 25px;
+}
+
+#left-bar span {
+    display: none;
+}
+
+.left-bar-btn {
+    color: white;
+}
+
+
+#central-part {
+    width: calc(100% - 100px);
+    height: calc(100vh - 100px);
+    /* debug */
+    background-color: yellow;
+}
