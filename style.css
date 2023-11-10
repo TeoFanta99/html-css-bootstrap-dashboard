@@ -16,7 +16,9 @@
 header {
     /* debug */
     background-color: red;
-    min-height: 100px;
+    height: 100px;
+    display: block;
+
 }
 
 header img {
@@ -24,7 +26,7 @@ header img {
 }
 
 #left-bar {
-    height: 100vh;
+    height: calc(100vh - 100px);
     background-color: #0D253A;
     width: 80px;
 }
@@ -46,8 +48,9 @@ header img {
 
 
 #central-part {
-    width: calc(100% - 80px);
-    height: calc(100vh - 80px);
+    flex-grow: 1;
+    overflow-y: scroll;
+    height: calc(100vh - 100px);
     /* debug */
     background-color: yellow;
 }
@@ -63,9 +66,12 @@ header img {
     min-height: 130px;
 }
 
+#main-container {
+    width: 90%;
+}
 
-.col {
-    /* debug */
+#faq-container {
+    padding: 0;
     border: 1px solid black;
 }
 
