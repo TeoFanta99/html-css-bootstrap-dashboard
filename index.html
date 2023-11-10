@@ -71,9 +71,9 @@
     <main class="d-flex">
 
         <!-- barra di sinistra -->
-        <section id="left-bar" class="d-flex flex-column">
+        <section id="left-bar" class="d-flex flex-column position-relative">
 
-            <div class="container-fluid mt-4 ms-2">
+            <div class="container-fluid mt-4">
 
                 <div class="left-bar-btn">
                     <i class="fa-solid fa-house"></i>
@@ -83,6 +83,7 @@
                     <i class="fa-solid fa-chart-simple"></i>
                     <span>Stats</span>
                 </div>
+                
                 <div class="left-bar-btn">
                     <i class="fa-solid fa-signal"></i>
                     <span>Signals</span>
@@ -90,12 +91,126 @@
 
             </div>
 
+            <div class="container position-absolute bottom-0">
+                <div class="left-bar-btn pb-4">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Admin</span>
+                </div>
+            </div>
+
+
             
         </section>
 
 
         <!-- parte centrale -->
         <section id="central-part">
+
+            <!-- header della parte centrale -->
+            <div id="central-part-header" class="container">
+                <div class="row row-cols-1 row-cols-sm-3">
+                    <div class="col">Column</div>
+                    <div class="col">Column</div>
+                    <div class="col">Column</div>
+                </div>
+            </div>
+
+
+            
+            <div class="container">
+
+                <!-- row 1: prossime classi + faq -->
+                <div class="row d-flex flex-column">
+                    
+                    <div class="col mt-3">
+
+                        
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col" class="d-none">Data inizio</th>
+                                    <th scope="col" class="d-none">ROI</th>
+                                    <th scope="col">Stato</th>
+                                    <th scope="col">Azioni</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Classe 75</th>
+                                    <td class="d-none">15 Feb 2021</td>
+                                    <td class="d-none">20%</td>
+                                    <td>done</td>
+                                    <td>icone</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Classe 76</th>
+                                    <td class="d-none">16 Feb 2021</td>
+                                    <td class="d-none">20%</td>
+                                    <td>done</td>
+                                    <td>icone</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Classe 77</th>
+                                    <td class="d-none">17 Feb 2021</td>
+                                    <td class="d-none">20%</td>
+                                    <td>done</td>
+                                    <td>icone</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Classe 78</th>
+                                    <td class="d-none">18 Feb 2021</td>
+                                    <td class="d-none">20%</td>
+                                    <td>done</td>
+                                    <td>icone</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Classe 79</th>
+                                    <td class="d-none">19 Feb 2021</td>
+                                    <td class="d-none">20%</td>
+                                    <td>done</td>
+                                    <td>icone</td>
+                                 </tr>
+                                <tr>
+                                    <th scope="row">Classe 80</th>
+                                    <td class="d-none">20 Feb 2021</td>
+                                    <td class="d-none">20%</td>
+                                    <td>done</td>
+                                    <td>icone</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Classe 81</th>
+                                    <td class="d-none">21 Feb 2021</td>
+                                    <td class="d-none">20%</td>
+                                    <td>done</td>
+                                    <td>icone</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Classe 82</th>
+                                    <td class="d-none">22 Feb 2021</td>
+                                    <td class="d-none">20%</td>
+                                    <td>done</td>
+                                    <td>icone</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col mt-3">faq</div>
+
+                </div>
+
+
+                <!-- row 2: to do + grafico -->
+                <div class="row d-flex flex-column">
+                
+                    <div class="col mt-3">to do</div>
+                    <div class="col mt-3">grafico</div>
+
+                </div>
+
+
+            </div>
 
         </section>
 
