@@ -1,0 +1,32 @@
+/* versione computer */
+@media all and (min-width: 992px) {
+
+    #main-container {
+        display: flex;
+    }
+
+    #ms_row-1 {
+        width: 60%;
+    }
+    
+    #ms_row-2 {
+        width: 40%;
+    }
+
+    #left-bar {
+        width: 130px;
+    }
+
+    #left-bar span {
+        display: inline-block;
+    }
+
+    #ms_new-student-col {
+        order: 2;
+    }
+
+    .ms_hidden {
+        display: inline-block;
+    }
+
+}

@@ -15,6 +15,7 @@
 
     <!-- importo css mio -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
 
     <!-- link a fontawesome -->
     <script src="https://kit.fontawesome.com/689deddfae.js" crossorigin="anonymous"></script>
@@ -25,7 +26,15 @@
     
     <!-- header in alto, fisso -->
     <header>
-        <span>header</span>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand">Navbar</a>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
     </header>
 
 
@@ -35,7 +44,7 @@
         <!-- barra di sinistra -->
         <section id="left-bar" class="d-flex flex-column position-relative">
 
-            <div class="container-fluid mt-4">
+            <div id="ms_left-bar-btn-container" class="container-fluid mt-4">
 
                 <div class="left-bar-btn">
                     <i class="fa-solid fa-house"></i>
@@ -69,94 +78,135 @@
         <section id="central-part">
 
             <!-- header della parte centrale -->
-            <div id="central-part-header" class="container">
-                <div class="row row-cols-1 row-cols-sm-3">
-                    <div class="col">Column</div>
-                    <div class="col">Column</div>
-                    <div class="col">Column</div>
+            <div class="pb-2" id="central-part-header">
+                <div class="row row-cols-1 row-cols-lg-3">
+
+                    <div id="ms_new-student-col" class="col pt-3 ps-2">
+                        <button class="btn" id="ms_add-new-student">
+                            <span>Nuovo Studente</span>
+                            <i class="fa-solid fa-plus p-2 ms-2 border border-1 rounded"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="col pt-3 ps-4">
+                        <span class="fs-2">Boolean</span>
+                        <span class="ms_breadcrumb">
+                            Piano blaze
+                        </span>
+                        <div>
+                            <span class="ms_breadcrumb">
+                                3 app
+                            </span>
+                            <i class="fa-solid fa-angles-right"></i>
+                            <span class="ms_breadcrumb ms_hidden">
+                                Boolean mobile app
+                            </span>
+                            <span class="ms_breadcrumb ms_hidden mt-1">
+                                Boolean web app
+                            </span>
+                            <span class="ms_breadcrumb ms_hidden mt-1">
+                                Boolean blog app
+                            </span>
+                            <span id="ms_plus" class="ms_breadcrumb">
+                                +
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col pt-3 ps-4">
+                        <span class="d-block">Studenti online negli ultimi 30 minuti</span>
+                        <span class="fs-2">125</span>
+                    </div>
                 </div>
             </div>
-
 
             
             <div class="container" id="main-container">
 
                 <!-- row 1: prossime classi + faq -->
-                <div class="row d-flex flex-column">
+                <div id="ms_row-1" class="row d-flex flex-column me-2">
                     
                     <!-- prossime classi -->
                     <div class="col mt-3">
+                        <div id="faq-container" class="container rounded-3">
+                            <span class="fs-2 ms-2">Prossime classi</span>
+                            <hr class="mt-2">
+                            <div class="ms_container bg-white">
+                                <table class="table mt-2">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col" class="d-none">Data inizio</th>
+                                            <th scope="col" class="d-none">ROI</th>
+                                            <th scope="col">Stato</th>
+                                            <th scope="col">Azioni</th>
+                                        </tr>
+                                    </thead>
+        
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Classe 75</th>
+                                            <td class="d-none">15 Feb 2021</td>
+                                            <td class="d-none">20%</td>
+                                            <td>done</td>
+                                            <td>icone</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 76</th>
+                                            <td class="d-none">16 Feb 2021</td>
+                                            <td class="d-none">20%</td>
+                                            <td>done</td>
+                                            <td>icone</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 77</th>
+                                            <td class="d-none">17 Feb 2021</td>
+                                            <td class="d-none">20%</td>
+                                            <td>done</td>
+                                            <td>icone</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 78</th>
+                                            <td class="d-none">18 Feb 2021</td>
+                                            <td class="d-none">20%</td>
+                                            <td>done</td>
+                                            <td>icone</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 79</th>
+                                            <td class="d-none">19 Feb 2021</td>
+                                            <td class="d-none">20%</td>
+                                            <td>done</td>
+                                            <td>icone</td>
+                                         </tr>
+                                        <tr>
+                                            <th scope="row">Classe 80</th>
+                                            <td class="d-none">20 Feb 2021</td>
+                                            <td class="d-none">20%</td>
+                                            <td>done</td>
+                                            <td>icone</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 81</th>
+                                            <td class="d-none">21 Feb 2021</td>
+                                            <td class="d-none">20%</td>
+                                            <td>done</td>
+                                            <td>icone</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 82</th>
+                                            <td class="d-none">22 Feb 2021</td>
+                                            <td class="d-none">20%</td>
+                                            <td>done</td>
+                                            <td>icone</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
 
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Nome</th>
-                                    <th scope="col" class="d-none">Data inizio</th>
-                                    <th scope="col" class="d-none">ROI</th>
-                                    <th scope="col">Stato</th>
-                                    <th scope="col">Azioni</th>
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Classe 75</th>
-                                    <td class="d-none">15 Feb 2021</td>
-                                    <td class="d-none">20%</td>
-                                    <td>done</td>
-                                    <td>icone</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Classe 76</th>
-                                    <td class="d-none">16 Feb 2021</td>
-                                    <td class="d-none">20%</td>
-                                    <td>done</td>
-                                    <td>icone</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Classe 77</th>
-                                    <td class="d-none">17 Feb 2021</td>
-                                    <td class="d-none">20%</td>
-                                    <td>done</td>
-                                    <td>icone</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Classe 78</th>
-                                    <td class="d-none">18 Feb 2021</td>
-                                    <td class="d-none">20%</td>
-                                    <td>done</td>
-                                    <td>icone</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Classe 79</th>
-                                    <td class="d-none">19 Feb 2021</td>
-                                    <td class="d-none">20%</td>
-                                    <td>done</td>
-                                    <td>icone</td>
-                                 </tr>
-                                <tr>
-                                    <th scope="row">Classe 80</th>
-                                    <td class="d-none">20 Feb 2021</td>
-                                    <td class="d-none">20%</td>
-                                    <td>done</td>
-                                    <td>icone</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Classe 81</th>
-                                    <td class="d-none">21 Feb 2021</td>
-                                    <td class="d-none">20%</td>
-                                    <td>done</td>
-                                    <td>icone</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Classe 82</th>
-                                    <td class="d-none">22 Feb 2021</td>
-                                    <td class="d-none">20%</td>
-                                    <td>done</td>
-                                    <td>icone</td>
-                                </tr>
-                            </tbody>
-                        </table>
 
                     </div>
 
@@ -165,9 +215,12 @@
                         <div id="faq-container" class="container rounded-3">
                             <span class="fs-2 ms-2">F.A.Q.</span>
                             <hr>
-                            <span class="border-bottom d-block ms-2">Come aggiungere un nuovo studente?</span>
-                            <span class="border-bottom d-block ms-2">Come posso accedere alle informazioni del mio account?</span>
-                            <span class="d-block ms-2">Posso usare questa dashboard da mobile?</span>
+                            <div class="ms_container bg-white">
+                                <span class="border-bottom d-block ms-2">Come aggiungere un nuovo studente?</span>
+                                <span class="border-bottom d-block ms-2">Come posso accedere alle informazioni del mio account?</span>
+                                <span class="d-block ms-2">Posso usare questa dashboard da mobile?</span>
+                            </div>
+
                         </div>
                     </div>
 
@@ -175,14 +228,14 @@
                     
 
                 <!-- row 2: to do + grafico -->
-                <div class="row d-flex flex-column">
+                <div id="ms_row-2" class="row d-flex flex-column">
                 
                     <!-- to do -->
                     <div class="col mt-3">
                         <div id="faq-container" class="container rounded-3">
                             <span class="fs-2 ms-2">To Do</span>
                             <hr>
-                            <div class="container p-2">
+                            <div class="container p-2 bg-white">
                                 <div class="container border border-1 rounded-2 ps-0 pe-0">
                                     <div class="form-check border-bottom p-1">
                                         <input class="form-check-input ms-0" type="checkbox" value="" id="flexCheckDefault">
@@ -209,7 +262,7 @@
 
                     <!-- grafico -->
                     <div class="col mt-3">
-                        <div id="faq-container" class="container rounded-3">
+                        <div id="faq-container" class="container rounded-3 bg-white">
                             <div class="container p-2">
                                 <div class="container border border-1 rounded-2 ps-0 pe-0">
                                     <div class="ms_img-container">
