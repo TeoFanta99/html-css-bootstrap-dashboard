@@ -29,4 +29,18 @@
         display: inline-block;
     }
 
+    header i {
+        padding-left: 10px;
+        display: inline-block;
+    }
+}
+
+
+
+/* versione tablet */
+@media all and (min-width: 768px) {
+
+    
+
+
 }
