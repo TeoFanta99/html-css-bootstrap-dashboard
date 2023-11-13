@@ -78,3 +78,7 @@ header img {
 hr {
     margin: 0;
 }
+
+main img {
+    width: 100%;
+}
