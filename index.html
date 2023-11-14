@@ -109,10 +109,22 @@
                 <div class="row row-cols-1 row-cols-lg-3">
 
                     <div id="ms_new-student-col" class="col pt-3 ps-2">
-                        <button class="btn" id="ms_add-new-student">
+                        <button class="btn" id="ms_add-new-student" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <span>Nuovo Studente</span>
                             <i class="fa-solid fa-plus p-2 ms-2 border border-1 rounded"></i>
                         </button>
+
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                              <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> 
+                            </div>
+                            <div class="offcanvas-body">
+                                ...
+                            </div>
+                        </div>
+
 
                     </div>
 
@@ -149,10 +161,10 @@
             </div>
 
             
-            <div class="container" id="main-container">
+            <div id="main-container">
 
                 <!-- row 1: prossime classi + faq -->
-                <div id="ms_row-1" class="row d-flex flex-column me-2">
+                <div id="ms_row-1" class="row d-flex flex-column">
                     
                     <!-- prossime classi -->
                     <div id="prossime-classi" class="col mt-3">
