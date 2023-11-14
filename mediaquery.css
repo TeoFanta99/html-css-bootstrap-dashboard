@@ -1,6 +1,14 @@
 /* versione computer */
 @media all and (min-width: 992px) {
 
+    #left-bar i {
+        font-size: 15px;
+    }
+
+    #left-bar span {
+        font-size: 12px;
+    }
+
     #main-container {
         display: flex;
     }
@@ -23,6 +31,9 @@
 
     #ms_new-student-col {
         order: 2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
     }
 
     .ms_hidden {

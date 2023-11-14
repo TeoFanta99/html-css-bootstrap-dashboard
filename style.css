@@ -13,12 +13,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
-    /* debug */
     background-color: #F8F9FA;
     height: 70px;
     display: block;
-
 }
 
 header .row {
@@ -56,6 +58,7 @@ header a {
 #left-bar i {
     color: white;
     font-size: 25px;
+    margin-top: 10px;
 }
 
 #left-bar span {
@@ -66,8 +69,14 @@ header a {
     color: white;
     margin-top: 15px;
     text-align: center;
+    cursor: pointer;
+    padding: 3px;
 }
 
+.left-bar-btn:hover {
+    background-color: #7D8E9B;
+    padding: 3px;
+}
 
 #central-part {
     flex-grow: 1;
@@ -75,15 +84,12 @@ header a {
     overflow-x: hidden;
     height: calc(100vh - 70px);
     background-color: #F8F9FA;
-    /* debug */
-
+    padding-bottom: 20px;
 }
-
 
 #central-part-header {
     background-color: #1B72E8;
     color: white;
-
 }
 
 #central-part-header .row {
@@ -99,8 +105,12 @@ header a {
     display: inline-block;
     padding: 2px 7px;
     border-radius: 50px;
-    /* debug */
     background-color: #165AB8;
+    cursor: pointer;
+}
+
+.ms_breadcrumb:hover {
+    opacity: 0.3;
 }
 
 .ms_hidden {
@@ -112,18 +122,9 @@ header a {
     margin: 0 auto;
 }
 
-#ms_row-1 {
+.ms_row {
     width: 98%;
     margin: 0 auto;
-}
-
-#ms_row-2 {
-    width: 98%;
-    margin: 0 auto;
-}
-
-.ms_hidden-tablet {
-    display: none;
 }
 
 .ms_label {
@@ -131,6 +132,7 @@ header a {
     color: white;
     border-radius: 50px;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .first-row-container {
