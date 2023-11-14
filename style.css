@@ -130,9 +130,17 @@ header a {
     font-size: 12px;
 }
 
-#faq-container {
+.first-row-container {
     padding: 0;
     border: 1px solid black;
+}
+
+#prossime-classi i {
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: grey;
+    cursor: pointer;
 }
 
 hr {
