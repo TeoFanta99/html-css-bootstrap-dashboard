@@ -44,3 +44,19 @@
 
 
 }
+
+
+
+
+
+/* versione mobile */
+
+/* anche se l'approccio è mobile first, ho dovuto mettere questa media query perché non riuscivo a risolvere un problema nella sezione "prossime classi". In particolare, quando davo "display: none" alle colonne "prossime classi" e "ROI", e nelle media query del tablet andavo a sostituire il "display: none" con "display: inline-block"in automatico si aggiungeva uno spazio tra le colonne e non riuscivo ad eliminarlo. Con la media query del mobile ho invece risolto. */
+
+@media all and (max-width: 575px) {
+
+    .ms_d-none-mobile {
+        display: none;
+    }
+
+}

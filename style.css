@@ -123,6 +123,13 @@ header a {
     display: none;
 }
 
+.ms_label {
+    padding: 2px 7px;
+    color: white;
+    border-radius: 50px;
+    font-size: 12px;
+}
+
 #faq-container {
     padding: 0;
     border: 1px solid black;
